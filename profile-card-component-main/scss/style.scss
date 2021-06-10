@@ -1,0 +1,201 @@
+@import "variables";
+
+
+:root {
+    font-size: 18px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(0, 11%, 12%);
+}
+
+
+section {
+    background-color: $darkCyan;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+} 
+
+
+.card {
+    width: 365px;
+    border-radius: 21px;
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+
+
+}
+
+.card-top {
+    background-image: url(../images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 7rem;
+}
+
+.card-middle {
+    padding: 0 20px 25px;
+
+    img {
+        overflow: hidden;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-top: -50px;
+        margin-bottom: 25px;
+        border: 5px solid #fff;
+
+      
+    }
+
+    h2 {
+        font-size: 1rem;
+        color: $darkBlue;
+        margin-bottom: 10px;
+
+        span {
+            font-weight: 300;
+            color: $darkGray;
+            margin-left: 5px;
+        }
+    }
+
+    .city {
+        font-size: .8rem;
+        color: $darkGray;
+        font-weight: 300;
+
+    }
+}
+
+.card-bottom {
+    border-top: 1px solid $darkgrayishblue;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;  
+    
+    .value {
+        font-size: 1rem;
+        color: $darkBlue;
+        margin-bottom: 5px;
+    }
+
+    .sub{
+        font-weight: 400;
+        color: $darkGray;
+        font-size: .7rem;
+        letter-spacing: 1px;
+
+    }
+}
+
+
+
+.circles .cir1,
+.circles .cir2 {
+    position: absolute;
+    width: 500px;
+
+}
+
+.circles .cir1 {
+    top: -253px;
+    left: -265px;
+
+}
+
+.circles .cir2 {
+    bottom: -253px;
+    right: -265px;
+
+} 
+
+
+@media only screen and (min-width:750px) {
+
+.circles .cir1,
+.circles .cir2  {
+
+    width: 650px;
+}
+
+.circles .cir1 {
+    top: -253px;
+    left: -265px;
+
+}
+
+.circles .cir2 {
+    bottom: -253px;
+    right: -265px;
+
+} 
+
+}
+
+@media only screen and (min-width:1000px) {
+
+    .circles .cir1,
+    .circles .cir2  {
+    
+        width: 700px;
+    }
+    
+    .circles .cir1 {
+        top: -303px;
+        left: -225px;
+    
+    }
+    
+    .circles .cir2 {
+        bottom: -303px;
+        right: -225px;
+    
+    } 
+    
+}
+@media only screen and (min-width:1400px) {
+
+    .circles .cir1,
+    .circles .cir2  {
+    
+        width: 1050px;
+    }
+    
+    .circles .cir1 {
+        top: -493px;
+        left: -405px;
+    
+    }
+    
+    .circles .cir2 {
+        bottom: -703px;
+        right: -250px;
+    
+    } 
+    
+}
+
+    
+    
+
+
+
+
+
